@@ -1,0 +1,79 @@
+.form{
+  margin-top: 150px;
+}
+
+.form-card {
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  text-align: center;
+  border-top: 5px solid #6a11cb;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  text-align: left;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus {
+  border-color: #6a11cb;
+  box-shadow: 0px 0px 5px rgba(106, 17, 203, 0.5);
+}
+
+.gender {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 5px;
+  color: #333;
+}
+
+button {
+  background: linear-gradient(to right, #ff512f, #dd2476);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(to right, #dd2476, #ff512f);
+}
+
+@media (max-width: 500px) {
+  .form-card {
+      width: 90%;
+  }
+}

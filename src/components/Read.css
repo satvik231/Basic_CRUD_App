@@ -1,0 +1,119 @@
+/* Loader Container */
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Spinner */
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(255, 255, 255, 0.2);
+  border-top-color: #0e0a0a;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Loading Text */
+.loading-text {
+  font-size: 16px;
+  color: rgb(16, 8, 8);
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+
+
+.container {
+  margin-top: 100px;
+  text-align: center;
+}
+
+/* Cards */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  margin: 20px auto;
+  border-top: 5px solid #6a11cb;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #555;
+  margin-bottom: 5px;
+}
+
+/* Buttons */
+.card-buttons {
+  margin-top: 15px;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 5px;
+}
+
+.view {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+}
+
+.edit {
+  background: linear-gradient(to right, #ff9800, #ff5722);
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 5px;
+  text-decoration: none;
+}
+
+.delete {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: white;
+}
+
+.edit:hover{
+  opacity: 0.8;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .card {
+      width: 90%;
+  }
+}

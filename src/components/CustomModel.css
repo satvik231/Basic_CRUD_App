@@ -1,0 +1,69 @@
+/* Button to Open Modal */
+.open-modal-btn {
+  padding: 12px 20px;
+  font-size: 16px;
+  background: linear-gradient(to right, #007bff, #6a11cb);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.open-modal-btn:hover {
+  opacity: 0.8;
+}
+
+/* Modal Background */
+.modal {
+  display: flex; /* Change this from `none` to `flex` */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+
+/* Modal Content */
+.modal-content {
+  background: linear-gradient(to right, #ffffff, #e6e6ff);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 350px;
+  animation: slideUp 0.3s ease-in-out;
+  padding: 50px;
+}
+
+/* Close Button */
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  color: #333;
+}
+
+.close-btn:hover {
+  color: red;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
